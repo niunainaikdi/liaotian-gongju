@@ -46,7 +46,7 @@
             if (!username) return alert("请输入昵称");
 
             // 连接 WebSocket
-            ws = new WebSocket(`ws://127.0.0.1:8000/ws/${username}`);
+           ws = new WebSocket(`ws://39.108.58.95:8000/ws/${username}`);
 
             ws.onopen = () => {
                 document.getElementById("login-box").style.display = "none";
